@@ -17,13 +17,13 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: rails_development
   pool: 5
-  user: postgres
-  password: 'cs*marx*26041989'
-  # Connect on a TCP socket. Omitted by default since the client uses a
-  # domain socket that doesn't need configuration. Windows does not have
-  # domain sockets, so uncomment these lines.
+  database: d858fm89smvuil
+  username: oxegyibtmwkypk
+  password: 'E2-Okd61HjeM6_O06lA6ts0kzG'
+  host: ec2-107-20-165-44.compute-1.amazonaws.com
+  port: 5432
+#in sockets, so uncomment these lines.
   host: localhost
 
   # The TCP port the server listens on. Defaults to 5432.
@@ -45,17 +45,19 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: rails_test
   pool: 5
-  host: localhost
-  user: postgres
-  password: 'cs*marx*26041989'
+  database: d4239650374gfc
+  username: xlbnccbjlsedci
+  password: 'WDMadnoD3a-7eSfhLIpz4Ot6Jb'
+  host: ec2-54-225-106-227.compute-1.amazonaws.com
+  port: 5432
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: rails_production
   pool: 5
-  host: localhost
-  user: postgres
-  password: 'cs*marx*26041989'
+  database: dl4d7v31a0br5
+  username: nixlgwnlystffq
+  password: '-3q5mYmnmr5DMHedhQ_Lxt9urN'
+  host: ec2-54-225-106-227.compute-1.amazonaws.com
+  port: 5432
