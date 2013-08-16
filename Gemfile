@@ -53,6 +53,8 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'
 gem 'haml'
+gem 'haml-rails'
+gem 'RedCloth'
 gem 'devise'
 gem 'devise-encryptable'
 

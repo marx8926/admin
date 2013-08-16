@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    RedCloth (4.2.9)
     actionmailer (4.0.0)
       actionpack (= 4.0.0)
       mail (~> 2.5.3)
@@ -77,6 +78,11 @@ GEM
       spork (>= 0.8.4)
     haml (4.0.3)
       tilt
+    haml-rails (0.4)
+      actionpack (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
+      haml (>= 3.1, < 4.1)
+      railties (>= 3.1, < 4.1)
     hike (1.2.3)
     hpricot (0.8.6)
     html2haml (1.0.1)
@@ -210,6 +216,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  RedCloth
   better_errors
   binding_of_caller
   bootstrap-sass
@@ -221,6 +228,7 @@ DEPENDENCIES
   guard-rspec
   guard-spork
   haml
+  haml-rails
   html2haml
   hub
   jbuilder (~> 1.2)
