@@ -18,13 +18,12 @@ development:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: d858fm89smvuil
-  username: oxegyibtmwkypk
-  password: 'E2-Okd61HjeM6_O06lA6ts0kzG'
-  host: ec2-107-20-165-44.compute-1.amazonaws.com
-  port: 5432
-#in sockets, so uncomment these lines.
+  database: rails_dev
+  username: postgres
+  password: 'cs*marx*26041989'
   host: localhost
+#  port: 5432
+#in sockets, so uncomment these lines.
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
@@ -46,18 +45,18 @@ test:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: d4239650374gfc
-  username: xlbnccbjlsedci
-  password: 'WDMadnoD3a-7eSfhLIpz4Ot6Jb'
-  host: ec2-54-225-106-227.compute-1.amazonaws.com
-  port: 5432
+  database: rails_test
+  username: postgres
+  password: 'cs*marx*26041989'
+  host: localhost
+#  port: 5432
 
 production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: dl4d7v31a0br5
-  username: nixlgwnlystffq
-  password: '-3q5mYmnmr5DMHedhQ_Lxt9urN'
-  host: ec2-54-225-106-227.compute-1.amazonaws.com
+  database: rails_prod
+  username: postgres
+  password: 'cs*marx*26041989'
+  host: localhost
   port: 5432

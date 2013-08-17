@@ -7,17 +7,32 @@
         = javascript_include_tag :application
         = csrf_meta_tags
   %body
-    %header.navbar.navbar-fixed-top
-      %nav.navbar-inner
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
         .container
-          = render 'layouts/navigation'
-    %main{:role => "main"}
-      .container
-        .content
-          .row
-            .span12
-              = render 'layouts/messages'
-              = yield
-          %footer
+        %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.brand{:href => "#"} Project name
+        .nav-collapse.collapse
+          %ul.nav
+            %li.active
+              %a{:href => "#"} Home
+            %li
+              %a{:href => "#about"} About
+            %li
+              %a{:href => "#contact"} Contact
+                          
+        %form.navbar-form.pull-right
+          %input.span2{:placeholder => "Email", :type => "text"}
+            %input.span2{:placeholder => "Password", :type => "password"}
+              %button.btn{:type => "submit"} Sign in
+      / /.nav-collapse
+      %main{:role => "main"}
+        .container
+          .content
+            .row
+              .span12
 
-	
+                = yield
