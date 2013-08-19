@@ -1,35 +1,50 @@
-.jumbotron
-  %h1 Super awesome marketing speak!
-  %p.lead Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-  %a.btn.btn-large.btn-success{:href => "#"} Sign up today
-
-.container.marketing
-  / Three columns of text below the carousel
+%body
+  .navbar.navbar-inverse.navbar-fixed-top
+    .navbar-inner
+      .container
+      %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => "#"} AdminChurch
+      .nav-collapse.collapse
+        %ul.nav
+          %li.active
+            %a{:href => "#"} Inicio
+          %li
+            %a{:href => "#about"} Sobre
+          %li
+            %a{:href => "#contact"} Contacto
+                          
+      %div.navbar-form.pull-right
+        = link_to "Sign In", new_user_session_path, :class => "btn btn-success"
+        = link_to "Sign Up", new_user_registration_path, :class => "btn btn-success"
+  .container
+  / Main hero unit for a primary marketing message or call to action
+  .hero-unit
+    %h1 Hello, world!
+    %p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+    %p
+      %a.btn.btn-primary.btn-large{:href => "#"} Learn more &raquo;
+  / Example row of columns
   .row
     .span4
-      %img.img-circle{"data-src" => "holder.js/140x140"}
-        %h2 Heading
-        %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-        %p
-          %a.btn{:href => "#"} View details &raquo;
-    / /.span4
+      %h2 Heading
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %p
+        %a.btn{:href => "#"} View details &raquo;
     .span4
-      %img.img-circle{"data-src" => "holder.js/140x140"}
-        %h2 Heading
-        %p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-        %p
-          %a.btn{:href => "#"} View details &raquo;
-    / /.span4
+      %h2 Heading
+      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %p
+        %a.btn{:href => "#"} View details &raquo;
     .span4
-      %img.img-circle{"data-src" => "holder.js/140x140"}
-        %h2 Heading
-        %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-        %p
-          %a.btn{:href => "#"} View details &raquo;
-    / /.span4
-  / /.row
+      %h2 Heading
+      %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      %p
+        %a.btn{:href => "#"} View details &raquo;
 
-%hr.soften
+  %hr.soften
   %h1 Congregaciones soportadas
   %p.marketing-byline
     Iglesias con el soporte de CLM-Net,
@@ -48,3 +63,10 @@
       %li.span3
         %a.thumbnail{:href => "http://www.gathercontent.com/", :target => "_blank"}
           %img{:alt => "Gather Content", :src => "/assets/example-sites/gathercontent.png"}
+
+
+:css
+  body{
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
